@@ -7,11 +7,10 @@ const cors = require('cors')
 
 // check db connection
 const mysqlConnection = require('./connection/mysqlConnection');
-//const handleDisconnect = require('./connection/connect');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const classesRouter = require('./components/classes');
+const classesRouter = require('./components/classes/classRouter');
 
 const app = express();
 
